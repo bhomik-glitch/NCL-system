@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center group pl-4">
-            <div className="relative w-36 h-36 overflow-hidden rounded-lg">
+            <div className="relative w-24 h-24 md:w-36 md:h-36 overflow-hidden rounded-lg">
               <img 
                 src={nclLogo} 
                 alt="NCL SYSTEMS Logo" 

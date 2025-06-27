@@ -99,7 +99,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="relative aspect-[16/9] w-full flex items-center justify-center overflow-hidden">
+      <div className="relative w-full flex items-center justify-center overflow-hidden min-h-[60vh] sm:aspect-[16/9]">
         {/* Slider Animation for Rotating Background Images */}
         <div className="absolute inset-0 w-full h-full flex transition-transform duration-700" style={{ transform: `translateX(-${heroIndex * 100}%)` }}>
           {heroImages.map((img: string, i: number) => (
@@ -108,51 +108,53 @@ const Home: React.FC = () => {
               src={img}
               alt="Hero Background"
               className="w-full h-full object-cover flex-shrink-0"
-              style={{ pointerEvents: 'none' }}
+              style={{ pointerEvents: 'none', minWidth: 0, minHeight: 0 }}
             />
           ))}
         </div>
         {/* Overlay for readability */}
         <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center w-full">
-          <h1 className="text-5xl font-bold text-white text-center mb-6">
+        <div className="relative z-10 flex flex-col items-center justify-center w-full px-4 sm:px-8 pt-32 md:pt-0">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-6">
             Transform Your Business<br />With Excellence
           </h1>
-          <p className="text-xl text-white mb-8 leading-relaxed text-center max-w-2xl">
+          <p className="text-base sm:text-lg md:text-xl text-white mb-8 leading-relaxed text-center max-w-2xl">
             We deliver innovative solutions that drive growth, enhance efficiency, and position your business for long-term success in today's competitive market.
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs sm:max-w-none mb-8">
             <Link
               to="/contact"
-              className="group inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-premium hover:shadow-premium-lg transform hover:scale-105"
+              className="group inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-premium hover:shadow-premium-lg transform hover:scale-105 w-full sm:w-auto"
             >
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
             <Link
               to="/about"
-              className="inline-flex items-center px-8 py-4 bg-white/80 backdrop-blur-sm text-blue-700 font-semibold rounded-xl border border-gray-400 hover:bg-white hover:shadow-premium transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 bg-white/80 backdrop-blur-sm text-blue-700 font-semibold rounded-xl border border-gray-400 hover:bg-white hover:shadow-premium transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
             >
               Learn More
             </Link>
           </div>
+          {/* Scroll Down Arrow Button */}
+          <div className="flex justify-center w-full">
+            <button
+              onClick={() => {
+                const el = document.getElementById('features-section');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="mt-4 sm:mt-0 bg-white/80 hover:bg-white text-blue-700 rounded-full p-2 shadow-lg transition-all duration-300 z-20 animate-bounce"
+              aria-label="Scroll Down"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          </div>
         </div>
-        {/* Scroll Down Arrow Button */}
-        <button
-          onClick={() => {
-            const el = document.getElementById('features-section');
-            if (el) {
-              el.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
-          className="absolute left-1/2 bottom-40 -translate-x-1/2 bg-white/80 hover:bg-white text-blue-700 rounded-full p-2 shadow-lg transition-all duration-300 z-20 animate-bounce"
-          aria-label="Scroll Down"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
       </div>
 
       {/* Features Section */}
