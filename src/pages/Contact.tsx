@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
     {
       icon: <MapPin className="h-6 w-6 text-blue-600" />,
       title: 'Office',
-      details: ['D-59 , lower ground sector 63 , Noida - 201307 ( UP)']
+      details: ['D-59 SECTOR 63 NOIDA- 201301 (U.P.)']
     },
     {
       icon: <Clock className="h-6 w-6 text-blue-600" />,

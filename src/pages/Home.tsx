@@ -449,9 +449,9 @@ const Home: React.FC = () => {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
-              { icon: Phone, title: 'Call Us', info: '+1 (555) 123-4567' },
-              { icon: Mail, title: 'Email Us', info: 'info@businesscorp.com' },
-              { icon: MapPin, title: 'Visit Us', info: '123 Business District, NY' }
+              { icon: Phone, title: 'Call Us', info: '+91-120-4318844' },
+              { icon: Mail, title: 'Email Us', info: 'INFO@NCLSYSTEMS.COM' },
+              { icon: MapPin, title: 'Visit Us', info: 'D-59 SECTOR 63 NOIDA- 201301 (U.P.)' }
             ].map((contact, index) => (
               <div 
                 key={index} 
