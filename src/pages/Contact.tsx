@@ -201,7 +201,7 @@ const Contact: React.FC = () => {
                   />
                 </div>
                 <a
-                  href="https://wa.me/" // Placeholder, to be replaced with actual link
+                  href="https://wa.link/bw7vz8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 px-6 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 flex items-center justify-center shadow-premium hover:shadow-premium-lg transform hover:scale-105"
@@ -240,7 +240,7 @@ const Contact: React.FC = () => {
               {/* WhatsApp Button */}
               <div className="mt-8 flex justify-center">
                 <a
-                  href="https://wa.me/" // Placeholder, to be replaced with actual link
+                  href="https://wa.link/bw7vz8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-green-500 text-white font-semibold rounded-xl shadow hover:bg-green-600 transition-all duration-300"
