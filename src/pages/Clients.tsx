@@ -192,7 +192,7 @@ const Clients: React.FC = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-50 via-white to-blue-50 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-gray-50 via-white to-blue-50 py-8 overflow-hidden" style={{ paddingTop: '6rem' }}>
         {/* Geometric Shapes */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 w-20 h-20 border border-blue-200 rotate-45 opacity-30 animate-pulse-subtle"></div>
@@ -201,18 +201,30 @@ const Clients: React.FC = () => {
         </div>
 
         <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-100 mb-8 animate-fade-in-up">
-            <Sparkles className="h-4 w-4 text-blue-600 mr-2" />
-            <span className="text-sm font-medium text-blue-600">Client Success Stories</span>
-          </div>
-          
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Our Clients
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             We're proud to work with amazing companies across various industries, 
             helping them achieve their goals and drive success.
           </p>
+        </div>
+      </section>
+
+      {/* Client Logos - Second Section */}
+      <section className="relative py-8 bg-white">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-10 w-16 h-16 border-2 border-purple-200 rounded-full opacity-30 animate-float"></div>
+          <div className="absolute bottom-1/4 right-20 w-24 h-24 bg-gradient-to-br from-blue-200 to-purple-200 rounded-lg rotate-12 opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Horizontally auto-scrolling infinite client logos row */}
+          <div className="space-y-8">
+            <AutoScrollLogoRow direction="forward" logos={logosRow1} />
+            <AutoScrollLogoRow direction="reverse" logos={logosRow2} />
+            <AutoScrollLogoRow direction="forward" logos={logosRow3} />
+          </div>
         </div>
       </section>
 
@@ -243,31 +255,6 @@ const Clients: React.FC = () => {
 
       {/* Industries Section */}
       {/* Industries Section */}
-
-      {/* Client Logos */}
-      <section className="relative py-20 bg-white">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-10 w-16 h-16 border-2 border-purple-200 rounded-full opacity-30 animate-float"></div>
-          <div className="absolute bottom-1/4 right-20 w-24 h-24 bg-gradient-to-br from-blue-200 to-purple-200 rounded-lg rotate-12 opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Trusted by Leading Companies
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              From startups to Fortune 500 companies, we've helped businesses of all sizes achieve their goals.
-            </p>
-          </div>
-          {/* Horizontally auto-scrolling infinite client logos row */}
-          <div className="space-y-8">
-            <AutoScrollLogoRow direction="forward" logos={logosRow1} />
-            <AutoScrollLogoRow direction="reverse" logos={logosRow2} />
-            <AutoScrollLogoRow direction="forward" logos={logosRow3} />
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials */}
       {/* Testimonials */}
