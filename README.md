@@ -106,7 +106,3 @@ The website is fully responsive and optimized for:
 - Refresh testimonials and reviews
 - Keep service offerings current
 - Maintain contact information accuracy
-
----
-
-**Built with ❤️ for NCL SYSTEMS PVT LTD** 
