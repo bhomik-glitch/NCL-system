@@ -33,7 +33,7 @@ import apacheLogo from '../assets/Clients/APACHE FOOTWEAR INDIA PRIVATE LIMITED.
 
 const logosRow1 = [extramarksLogo, nhpcLogo, abilitiesIndiaLogo, aiiaLogo, milkoseLogo, i2k2Logo, sertoLogo, setcoLogo, fcsLogo];
 const logosRow2 = [csirLogo, aiimsLogo, nitLogo, bhelLogo, radioLogo, beetelLogo, devpackLogo, sstechnoparkLogo, shivnadarLogo, coloplastLogo];
-const logosRow3 = [dentalLogo, kvsLogo, powergridLogo, mohfwLogo, railwaysLogo, armyLogo, airforceLogo, iiscoLogo, esicLogo, apacheLogo];
+const logosRow3 = [dentalLogo, kvsLogo, powergridLogo, armyLogo, airforceLogo, iiscoLogo, esicLogo, apacheLogo];
 
 type AutoScrollLogoRowProps = {
   direction?: 'forward' | 'reverse';
