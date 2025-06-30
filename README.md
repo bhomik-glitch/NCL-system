@@ -1,6 +1,7 @@
 # NCL Systems Website
 
 A modern, responsive website for NCL SYSTEMS PVT LTD, showcasing their comprehensive IT and telecommunications solutions. Built with React, TypeScript, and Tailwind CSS.
+> **The website is currently live at: [[https://www.nclsystems.com/](https://www.nclsystems.com/)]**
 
 ## 🚀 Project Overview
 
